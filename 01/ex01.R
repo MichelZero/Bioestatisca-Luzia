@@ -3,8 +3,21 @@
 # 1.	O número (em milhões) de habitantes de uma região, é apresentado na Tabela 1.
 # a)	Construa uma distribuição de frequências relativas.
 # b)	Represente os dados em um diagrama de colunas.
-# c)	Por que a moda é a medida mais adequada para esses dados? Qual o seu valor? Mostre na tela usando print ou cat.
+# c)	Por que a moda é a medida mais adequada para esses dados?
+#   - Qual o seu valor? 
+#   - Mostre na tela usando print ou cat.
 
+# Tabela 1: Número em milhões de habitantes
+# +---------------------+------------+
+# |   Nascimento        | Habitantes |
+# +---------------------+------------+
+# | Europa              |   741.5    |
+# | Ásia                |  4463.3    |
+# | Caribe              |    39.5    |
+# | América Central     |     0.79   |
+# | América do Sul      |   389.4    |
+# | África              |  1225.8    |
+# +---------------------+------------+
 
 
 
@@ -52,6 +65,22 @@ dados$Frequencia_Relativa_Percentual <- percent(dados$Frequencia_Relativa, accur
 cat("--- a) Distribuição de Frequências Relativas ---\n\n")
 print(dados)
 
+### Análise dos Dados ###
+# --- a) Distribuição de Frequências Relativas ---
+# +---------------------+------------+-----------------------+-------------------------------+
+# |   Nascimento        | Habitantes | Frequencia Relativa   | Frequencia Relativa (%)       |
+# +---------------------+------------+-----------------------+-------------------------------+
+# | Europa              |   741.50   |      0.1081           |           10.8%               |
+# | Ásia                |  4463.30   |      0.6506           |           65.1%               |
+# | Caribe              |    39.50   |      0.0058           |            0.6%               |
+# | América Central     |     0.79   |      0.0001           |            0.0%               |
+# | América do Sul      |   389.40   |      0.0568           |            5.7%               |
+# | África              |  1225.80   |      0.1787           |           17.9%               |
+# +---------------------+------------+-----------------------+-------------------------------+
+cat("A distribuição de frequências relativas nos mostra a proporção da população de cada região em relação ao total.\n")
+cat("Podemos observar que a Ásia possui a maior proporção, seguida pela África e pela Europa.\n")
+cat("Essas informações são importantes para entender a demografia global e direcionar políticas públicas.\n")
+
 
 ### b) Represente os dados em um diagrama de colunas. ###
 
@@ -70,7 +99,8 @@ grafico_colunas <- ggplot(dados, aes(x = reorder(Nascimento, -Habitantes), y = H
   theme_minimal() + # Um tema visualmente mais limpo
   theme(legend.position = "none") # Remove a legenda, pois as cores já estão no eixo X
 
-# Para exibir o gráfico no VS Code, basta "printar" o objeto do gráfico
+# Para exibir o gráfico, "printar" o objeto do gráfico
+# windows() # usei o windows() para abrir uma janela gráfica.
 print(grafico_colunas)
 
 
