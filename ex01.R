@@ -1,5 +1,13 @@
 
 
+# 1.	O número (em milhões) de habitantes de uma região, é apresentado na Tabela 1.
+# a)	Construa uma distribuição de frequências relativas.
+# b)	Represente os dados em um diagrama de colunas.
+# c)	Por que a moda é a medida mais adequada para esses dados? Qual o seu valor? Mostre na tela usando print ou cat.
+
+
+
+
 
 ### Pacotes Necessários (certifique-se de que estão instalados) ###
 
