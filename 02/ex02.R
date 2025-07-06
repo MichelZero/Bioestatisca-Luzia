@@ -1,3 +1,30 @@
+
+# Bioestatística - Exercício 02
+# 2.	Na Tabela 2 tem-se um resumo da média salarial (em reais) de
+# professores do ensino básico em territórios fictícios.
+
+# ---------------------------------------------------------------
+# Tabela 2: Resumo salarial dos professores do ensino básico
+# ---------------------------------------------------------------
+# | Percentil | Estatística | Valor (R$) | Território   |
+# |-----------|-------------|------------|--------------|
+# | 100%      | Máximo      | 63.662,00  | Ponte Nova   |
+# | 75%       | Q3          | 46.119,00  | -            |
+# | 50%       | Mediana     | 41.786,00  | -            |
+# | 25%       | Q1          | 38.092,00  | -            |
+# | 0%        | Mínimo      | 24.165,00  | Balma        |
+# ---------------------------------------------------------------
+
+# a)	Qual a amplitude e sua interpretação?
+# b)	Mostre e interprete o intervalo interquartil.
+# c)	Construa o boxplot com distribuição dos salários dos professores a partir dos dados 
+#      da Tabela 2. Com base no boxplot, explique a direção da assimetria da distribuição.
+# d)	Usando as funções do R, mostre as estatísticas descritivas para ter uma visão geral 
+#     dos salários: valor mínimo, primeiro quartil (Q1), mediana, terceiro quartil (Q3), máximo, média e desvio padrão.
+# e)	Embora a distribuição seja assimétrica, ainda que aproximadamente com forma de 
+#     sino, qual valor é mais próximo para seu desvio padrão, dados os seguintes 
+# valores: 100, 1.000, 11.000 ou 29.000? Explique o resultado (comentário, print ou cat).
+
 # --- Resolução Completa do Exercício 2 ---
 
 # 1. Definir as estatísticas fornecidas pela Tabela 2
