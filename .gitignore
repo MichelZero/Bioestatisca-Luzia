@@ -50,3 +50,6 @@ rsconnect/
 
 # Microsoft Word files
 *.docx
+
+# Pdf files
+*.pdf
